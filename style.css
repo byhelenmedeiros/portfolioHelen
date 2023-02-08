@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "jetbrains";
+    src: url(/fonts/JetBrainsMono-VariableFont_wght.woff);
+
+    font-family: "ptsansbold";
+    src: url(/fonts/PTSans-Bold.woff);
+
+    font-family: "PTsans";
+    src: url(/fonts/PTSans-Regular.woff);
+
+    font-family: "PTSansNarrow";
+    src: url(/fonts/PTSansNarrow-Regular.woff);
+
+    font-family: "PTSansNarrowbold";
+    src: url(/fonts/PTSansNarrow-Bold.woff);
+}
