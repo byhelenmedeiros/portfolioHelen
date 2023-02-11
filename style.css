@@ -1,15 +1,15 @@
 @font-face {
     font-family: "ptsansbold";
-    src: url(/fonts/PTSans-Bold.woff);
+    src: url(assets/fonts/PTSans-Bold.woff);
 
     font-family: "PTsans";
-    src: url(/fonts/PTSans-Regular.woff);
+    src: url(assets/fonts/PTSans-Regular.woff);
 
     font-family: "PTSansNarrow";
-    src: url(/fonts/PTSansNarrow-Regular.woff);
+    src: url(assets/fonts/PTSansNarrow-Regular.woff);
 
     font-family: "PTSansNarrowbold";
-    src: url(/fonts/PTSansNarrow-Bold.woff);
+    src: url(assets/fonts/PTSansNarrow-Bold.woff);
 }
 
 *{
@@ -17,9 +17,10 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-
-
+    scroll-behavior: smooth;
 }
+
+
 
 #home{
     background-image: url(/img/blurry-gradient-haikei.png);
@@ -198,7 +199,7 @@ li {
 }
 
 
-.cv{
+.cv-download{
     width: 128px;
     height: 30px;
     border: none;
@@ -212,6 +213,7 @@ li {
     color: #FFFFFF;
     margin-top: 80px;
     margin-right: 20px;
+    cursor: pointer;
 
 
 }
@@ -230,7 +232,168 @@ li {
     color: #FFFFFF;
     margin-top: 80px;
     margin-right: 20px;
+    cursor: pointer;
     
 
 
 }
+
+.header-scroll-icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    top: 55%;
+    left: 47%;
+    transform: translateX(-50%);
+    animation: bounce 1s infinite;
+    transition: transform 1s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+    
+
+.header-scroll-icon i {
+    font-size: 16px;
+    color: #AFAFAF;
+    margin-right: 10px;
+}
+
+.header-scroll-icon p {
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    display: flex;
+    color: #AFAFAF;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.245em;
+    width: 50px;
+    text-transform: uppercase;
+}
+
+
+/* ABOUT ME*/
+
+.container-about{
+    background-image: url(/img/curvebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: #F8F8F8;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+
+    
+    
+}
+.imgabout{
+    margin-top: 115px;
+    position: relative;
+    margin-left: 115px;
+    left: 10%;
+    transform: translate(-50%, -50%); 
+    z-index: 0;
+
+    
+    
+}
+
+
+.about{
+    background-color: #F8F8F8;
+    
+
+
+}
+.about h1{
+
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    align-items: center;
+    margin-left: 115px;
+    position: relative;
+    left: 45%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    color: #833B61;
+}
+.about h2{
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 28px;
+    align-items: center;
+    letter-spacing: 0.245em;
+    margin-left: 115px;
+    color: #833B61;
+    margin-top: 60px;
+}
+
+.about h3{
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #833B61;
+    letter-spacing: 0.1em;
+    margin-left: 115px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+
+
+}
+.about span{
+    color: #F67E7D;
+    width: 50%;
+
+}
+.about p{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: left;
+    height: 252px;
+    width: 398px;
+    margin-left: 115px;
+    color: #833B61;
+
+
+}
+.imgabout{
+    margin-top: 115px;
+    position: relative;
+    z-index: 0;
+    
+}
+.container-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.imagemhelen {
+
+}
+
