@@ -6,3 +6,18 @@ button.addEventListener('click', function() {
   link.download = 'cvhelen.pdf';
   link.click();
 });
+
+
+const icon = document.querySelector('.icon');
+const textP = document.querySelector('.text-p');
+const hiddenTextP = document.querySelector('.text-p.hidden');
+
+icon.addEventListener('mouseover', function() {
+  textP.style.display = 'none';
+  hiddenTextP.style.display = 'block';
+});
+
+icon.addEventListener('mouseout', function() {
+  textP.style.display = 'block';
+  hiddenTextP.style.display = 'none';
+});

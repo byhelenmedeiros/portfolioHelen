@@ -297,26 +297,8 @@ li {
     
     
 }
-.imgabout{
-    margin-top: 115px;
-    position: relative;
-    margin-left: 115px;
-    left: 10%;
-    transform: translate(-50%, -50%); 
-    z-index: 0;
 
-    
-    
-}
-
-
-.about{
-    background-color: #F8F8F8;
-    
-
-
-}
-.about h1{
+.about h1, .skills h1{
 
     font-family: 'JetBrains Mono';
     font-style: normal;
@@ -333,11 +315,11 @@ li {
     z-index: 1;
     color: #833B61;
 }
-.about h2{
+.about h2, .skills h2{
     font-family: 'PT Sans Narrow';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 28px;
     align-items: center;
     letter-spacing: 0.245em;
@@ -346,11 +328,11 @@ li {
     margin-top: 60px;
 }
 
-.about h3{
+.about h3, .skills h3{
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 48px;
     color: #833B61;
     letter-spacing: 0.1em;
@@ -360,12 +342,12 @@ li {
 
 
 }
-.about span{
+.about span, .skills span{
     color: #F67E7D;
-    width: 50%;
+
 
 }
-.about p{
+.about p, .skills p{
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
@@ -373,7 +355,6 @@ li {
     line-height: 21px;
     display: flex;
     align-items: left;
-    height: 252px;
     width: 398px;
     margin-left: 115px;
     color: #833B61;
@@ -390,10 +371,81 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
+
+    
 }
 
-.imagemhelen {
+/*skills*/
 
+
+.container-skills {
+    background-image: url(/img/curve2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+
+.text-p{
+    color: #771514;
+    background-color: #F67E7D;
+    padding: 14px 23px;
+    border-radius: 20px;
+    margin-top: 85px;
+    display: none;
+}
+
+.text-p.hidden {
+    display: block;
+}
+
+
+.skills-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+
+
+    }
+    
+.col {
+    text-align: center;
+    margin: 35px;
+
+    }
+
+.col p{
+
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #833B61;
+    margin-top: 10px;
+    
+}
+.icons {
+    position: relative;
+    width: 125px;
+    height: 125px;
+  }
+  
+.html {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 30px;
+    left: 30px;
+  }
+  
+  .description {
+    text-align: center;
+  }
