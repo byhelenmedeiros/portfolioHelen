@@ -435,7 +435,8 @@ li {
 .icons {
     position: relative;
     width: 125px;
-    height: 125px;
+    z-index: 2;
+
   }
   
 .html {
@@ -444,6 +445,7 @@ li {
     height: 70px;
     top: 30px;
     left: 30px;
+    z-index: 1;
   }
   
   .description {
