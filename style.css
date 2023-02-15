@@ -473,7 +473,7 @@ li {
 }
 
 
-.card-container {
+.card-projects{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
