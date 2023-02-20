@@ -291,12 +291,12 @@ li {
     height: 100vh;
     background-color: #F8F8F8;
     display: flex;
-    align-items: left;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 
-    
-    
 }
+    
+
 
 .about h1, .skills h1, .projects h1{
 
@@ -361,9 +361,7 @@ li {
 
 
 }
-.imgabout, .imgprojects{   
-    position: relative;
-    z-index: 0;
+.imgprojects, .imgabout {   
     margin: 30px;
     
 }
@@ -371,10 +369,11 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+
 
     
 }
+
 
 /*skills*/
 
@@ -387,12 +386,12 @@ li {
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
 }
 
 
-
-.text-p{
+.text-p {
     color: #771514;
     background-color: #F67E7D;
     padding: 14px 23px;
@@ -406,13 +405,8 @@ li {
 }
 
 
-.skills-img {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
 
 
-    }
     
 .col {
     text-align: center;
@@ -458,9 +452,11 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #ffffff;
-    display: flex;
     height: 100vh;
-    justify-content: start;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
 
 
@@ -468,35 +464,66 @@ li {
 .skills-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 
 .cards-projects{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: flex-start;
     align-content: center;
-    align-items: center;
 
 }
 
 .card {
-    height: 250px;
-    width: 200px;
+    height: 300px;
+    width: 250px;
     border-radius: 19px;    
     margin: 20px;
     overflow: hidden;
     border: #771514 ;
+    
 }
+
+
 
 .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform .5s;
+    
+
 }
 
 .card a:hover img {
     transform: scale(1.5);
+
+
+}
+
+.text-p-projects{
+    color: #771514;
+    background-color: #F67E7D;
+    padding: 14px 23px;
+    border-radius: 20px;
+    margin-top: 85px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    width: 398px;
+    margin-left: 115px;
+    color: #833B61;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+.text-p-projects:hover{
+    transform: scale(1.1);
+
 }
