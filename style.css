@@ -423,7 +423,7 @@ li {
     align-items: center;
     letter-spacing: 0.1em;
     color: #833B61;
-    margin-top: 10px;
+    
 }
 
 .icons {
@@ -439,7 +439,12 @@ li {
     z-index: 1;
     transform: translateX(-10%);
     transform: translateY(130%);
+    transition: opacity 0.3s;
     
+
+}
+.html:hover { 
+    opacity: 0.5;
 
 }
 /*projects*/
@@ -576,10 +581,6 @@ li {
     border-right: 2px solid #F67E7D;
 }
 
-.container2education{
-
-
-}
 
 .container2education h2{
     font-family: 'JetBrains Mono';
@@ -719,6 +720,26 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+.container-projects button{
+    padding: 20px 50px;
+    height: 38px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #833B61;
+    border-radius: 20px;
+    border: none;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 50px;
 }
 
 .copyright{
