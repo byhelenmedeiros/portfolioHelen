@@ -428,23 +428,19 @@ li {
 
 .icons {
     position: relative;
+    margin: 30px;
 }
 
-.html {
+.html { 
     width: 50px;
-}
-
-.icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 2rem;
     color: #fff;
-    background-color: #833B61;
-    padding: 0.5rem;
-    border-radius: 50%;
     z-index: 1;
+    transform: translateX(-10%);
+    transform: translateY(90%);
+    
+
 }
 /*projects*/
 
