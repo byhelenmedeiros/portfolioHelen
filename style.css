@@ -457,10 +457,9 @@ li {
     background-image: url(/img/curve2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     background-color: #ffffff;
     display: flex;
-    align-items: flex-start;
+    height: 100vh;
     justify-content: start;
 }
 
@@ -473,17 +472,22 @@ li {
 }
 
 
-.card-projects{
+.cards-projects{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
 }
 
 .card {
-    width: 300px;
-    height: 200px;
+    height: 250px;
+    width: 200px;
+    border-radius: 19px;    
     margin: 20px;
     overflow: hidden;
+    border: #771514 ;
 }
 
 .card img {
