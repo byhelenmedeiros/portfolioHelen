@@ -298,7 +298,7 @@ li {
     
 
 
-.about h1, .skills h1, .projects h1{
+.about h1, .skills h1, .projects h1, .education h1{
 
     font-family: 'JetBrains Mono';
     font-style: normal;
@@ -315,7 +315,7 @@ li {
     z-index: 1;
     color: #833B61;
 }
-.about h2, .skills h2, .projects h2{
+.about h2, .skills h2, .projects h2, .education h2{
     font-family: 'PT Sans Narrow';
     font-style: normal;
     font-weight: 600;
@@ -328,7 +328,7 @@ li {
     margin-top: 60px;
 }
 
-.about h3, .skills h3, .projects h3{
+.about h3, .skills h3, .projects h3, .education h3{
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 700;
@@ -342,12 +342,12 @@ li {
 
 
 }
-.about span, .skills span, .projects span{
+.about span, .skills span, .projects span, .education span{
     color: #F67E7D;
 
 
 }
-.about p, .skills p{
+.about p, .skills p, .education p{
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
@@ -361,7 +361,7 @@ li {
 
 
 }
-.imgprojects, .imgabout {   
+.imgprojects, .imgabout, .imgeducation {   
     margin: 30px;
     
 }
@@ -451,7 +451,7 @@ li {
     background-image: url(/img/curve2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #ffffff;
+    background-color: #F8F8F8;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -526,4 +526,219 @@ li {
 .text-p-projects:hover{
     transform: scale(1.1);
 
+}
+
+/*education section*/
+
+.container-education {
+    background-image: url(/img/curve2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.educationtexttitulo{
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #833B61;
+    margin-left: 115px;
+    margin-top: 40px;
+}
+
+.educationtextsub{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #833B61;
+    margin-left: 115px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+
+}
+
+.line {
+    position: relative;
+    width: 20px;
+    height: 100vh;
+    left: -40px;
+}
+
+.double-line-left {
+    right: 50%;
+    transform: translateX(-50%);
+    border-left: 2px solid #833B61;
+    border-right: 2px solid #F67E7D;
+}
+
+.container2education{
+
+
+}
+
+.container2education h2{
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    
+
+
+}
+
+.container2education h3{
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 86.5%;
+    align-items: center;
+    letter-spacing: 0.245em;
+    margin-top: 10px;
+
+}
+.container2education p{
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    align-items: center;
+    color: #000000;
+    margin-top: 10px;
+
+}
+
+.box1{
+    margin-bottom: 150px;
+    position: relative; 
+
+
+}
+.box2{
+    position: relative; 
+}
+
+
+.image {
+    position: absolute; 
+    bottom: -50; 
+    left: -50px; 
+    width: 100%; 
+}
+
+/*contact*/
+
+.container-contact{
+    background-image: url(/img/bgcontact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-contact p{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+#name, #email, #Subject{
+    box-sizing: border-box;
+    margin-top: 35px;
+    width: 490px;
+    height: 45px;
+    background: #b3a7df80;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 5px;
+    
+}
+
+#message {
+    box-sizing: border-box;
+    margin-top: 35px;
+    width: 490px;
+    height: 180px;
+    background: #b3a7df80;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 5px;
+    margin-bottom: 65px;
+
+}
+
+#name::placeholder, #email::placeholder, #Subject::placeholder, #message::placeholder {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+    padding-top: 10px;
+
+}
+#name:focus, #email:focus, #Subject:focus, #message:focus{
+    font-family: 'PT Sans';
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.container-contact button{
+    padding: 20px 50px;
+    height: 38px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #833B61;
+    border-radius: 20px;
+    border: none;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright{
+    background-color: #833B61;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 13px;
+    height: 25px;
+    color: #FFFFFF;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heart {
+    color: #F67E7D;
 }
