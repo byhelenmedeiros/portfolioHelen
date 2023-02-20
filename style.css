@@ -409,13 +409,12 @@ li {
 
     
 .col {
-    text-align: center;
-    margin: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    }
-
-.col p{
-
+.col p {
     font-family: 'PT Sans Narrow';
     font-style: normal;
     font-weight: 700;
@@ -425,26 +424,28 @@ li {
     letter-spacing: 0.1em;
     color: #833B61;
     margin-top: 10px;
-    
 }
+
 .icons {
-        position: relative;
-        width: 125px;
-        z-index: 1;
+    position: relative;
 }
 
 .html {
-        position: absolute;
-        width: 70px;
-        height: 70px;
-        top: 30px;
-        left: 30px;
+    width: 50px;
 }
 
-.description {
-        text-align: center;
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+    background-color: #833B61;
+    padding: 0.5rem;
+    border-radius: 50%;
+    z-index: 1;
 }
-
 /*projects*/
 
 .container-projects {
