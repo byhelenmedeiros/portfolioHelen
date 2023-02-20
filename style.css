@@ -686,6 +686,7 @@ li {
     cursor: pointer;
     padding-left: 5px;
     margin-bottom: 65px;
+    resize: none;
 
 }
 
