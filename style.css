@@ -2,7 +2,7 @@
     font-family: "ptsansbold";
     src: url(assets/fonts/PTSans-Bold.woff);
 
-    font-family: "PT sans";
+    font-family: "PT Sans";
     src: url(assets/fonts/PTSans-Regular.woff);
 
     font-family: "PTSansNarrow";
@@ -83,7 +83,7 @@ li {
 }
 
 .pt, .en {
-    font-family: 'tahoma';
+    font-family: 'Tahoma';
     width: 30px;
     height: 30px;
     border-radius: 15px;
@@ -100,7 +100,7 @@ li {
 
 }
 .pt:hover, .en:hover {
-    font-family: 'tahoma';
+    font-family: 'Tahoma';
     width: 30px;
     height: 30px;
     border-radius: 15px;
