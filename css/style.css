@@ -96,30 +96,17 @@ li {
 .pt:hover, .en:hover {
     font-weight: 700;
     cursor: pointer;
-
 }
 
 .header-hello{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    
-
 }
 
         
-
-
 .header-title img{
-    position: absolute;
-    top: 40%; 
-    left: 25%; 
-    transform: translate(-50%, -50%); 
-    
-
-
-        
+    text-align: center;  
 }
 
 
