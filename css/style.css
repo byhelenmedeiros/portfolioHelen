@@ -2,7 +2,7 @@
     font-family: "ptsansbold";
     src: url(assets/fonts/PTSans-Bold.woff);
 
-    font-family: "PT Sans";
+    font-family: "PTSans";
     src: url(assets/fonts/PTSans-Regular.woff);
 
     font-family: "PTSansNarrow";
@@ -348,7 +348,7 @@ li {
 
 }
 .about p, .skills p, .education p{
-    font-family: 'PT Sans';
+    font-family: Tahoma;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -512,7 +512,7 @@ li {
     padding: 14px 23px;
     border-radius: 20px;
     margin-top: 85px;
-    font-family: 'PT Sans';
+    font-family: Tahoma;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -555,7 +555,7 @@ li {
 }
 
 .educationtextsub{
-    font-family: 'PT Sans';
+    font-family: tahoma;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -651,7 +651,7 @@ li {
 }
 
 .container-contact p{
-    font-family: 'PT Sans';
+    font-family: tahoma;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -691,7 +691,7 @@ li {
 }
 
 #name::placeholder, #email::placeholder, #Subject::placeholder, #message::placeholder {
-    font-family: 'PT Sans';
+    font-family: tahoma;
     font-style: normal;
     font-size: 12px;
     line-height: 16px;
@@ -700,7 +700,7 @@ li {
 
 }
 #name:focus, #email:focus, #Subject:focus, #message:focus{
-    font-family: 'PT Sans';
+    font-family: tahoma;
     font-size: 16px;
     color: #ffffff;
 }
@@ -708,7 +708,7 @@ li {
 .container-contact button{
     padding: 20px 50px;
     height: 38px;
-    font-family: 'PT Sans';
+    font-family: tahoma;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -726,7 +726,7 @@ li {
 .container-projects button{
     padding: 20px 50px;
     height: 38px;
-    font-family: 'PT Sans';
+    font-family: tahoma;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -745,7 +745,7 @@ li {
 
 .copyright{
     background-color: #833B61;
-    font-family: 'PT Sans';
+    font-family: tahoma;
     font-style: normal;
     font-size: 12px;
     line-height: 13px;
