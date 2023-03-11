@@ -107,7 +107,8 @@ li {
 }
 
 .header-hello img{
-    width: 50%;
+    max-width: 300px;
+    z-index: 0;
 }
 
 .header-hello h2{
@@ -117,7 +118,12 @@ li {
     font-weight: 500;
     font-size: 2em;
     color: #FFFFFF;
-    
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 2;
+
     
 }
 .header-hello span{
