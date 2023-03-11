@@ -15,13 +15,19 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 1200%;
 }
 
 
 
 #home{
     background-image: url(/img/blurry-gradient-haikei.png);
-    height: 80%;
+    height: 75%;
     background-size: cover;
 }
 
@@ -106,10 +112,12 @@ li {
 }
 
 .header-hello img{
-    max-width: 300px;
+    max-width: 200px;
     z-index: 0;
     position: relative;
-    
+    top: 10%;
+    left: 25%;
+ 
 }
 
 .header-hello h2{
@@ -156,8 +164,7 @@ li {
 
 }
 .header-img img{
-    width: 1000px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 50px auto;
 
 
