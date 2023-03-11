@@ -102,13 +102,14 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     
 }
 
 .header-hello img{
     max-width: 300px;
     z-index: 0;
+    position: relative;
+    
 }
 
 .header-hello h2{
@@ -178,7 +179,7 @@ li {
     font-size: 1em;
     letter-spacing: 0.2em;
     color: #FFFFFF;
-    margin:  20px 40px;
+    margin:  20px 10px;
     cursor: pointer;
 
 }
