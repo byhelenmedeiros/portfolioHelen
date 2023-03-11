@@ -2,7 +2,6 @@
     font-family: "ptsansbold";
     src: url(assets/fonts/PTSans-Bold.woff);
 
-
     font-family: "PTSansNarrow";
     src: url(assets/fonts/PTSansNarrow-Regular.woff);
 
@@ -22,7 +21,7 @@
 
 #home{
     background-image: url(/img/blurry-gradient-haikei.png);
-    height: 743px;
+    height: 80%;
     background-size: cover;
 }
 
@@ -75,8 +74,7 @@ ul li a:hover {
 }
 
 li {
-    margin-right: 20px;
-    
+    margin: 20px;
     
 }
 
@@ -89,29 +87,15 @@ li {
     line-height: 30px;
     display: inline-block;
     background-color: #833B61;
-    color: #B3A7DF;
-    font-size: 13px;
-    margin-left: 20px;
+    color: #B3A7DF; 
+    margin:  auto 10px;
     cursor: pointer;
-    margin-top: 50px;
 
 
 }
 .pt:hover, .en:hover {
-    font-family: 'Tahoma';
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    text-align: center;
-    line-height: 30px;
-    display: inline-block;
-    background-color: #833B61;
-    color: #B3A7DF;
-    font-size: 12px;
     font-weight: 700;
-    margin-left: 20px;
     cursor: pointer;
-    transform: scale(30px);
 
 }
 
