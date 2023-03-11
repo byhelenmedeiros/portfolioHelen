@@ -2,8 +2,6 @@
     font-family: "ptsansbold";
     src: url(assets/fonts/PTSans-Bold.woff);
 
-    font-family: "PTSans";
-    src: url(assets/fonts/PTSans-Regular.woff);
 
     font-family: "PTSansNarrow";
     src: url(assets/fonts/PTSansNarrow-Regular.woff);
@@ -198,44 +196,45 @@ li {
     text-align: center;
 }
 
+/*botoes do header*/
 
 .cv-download{
-    width: 128px;
-    height: 30px;
+    padding: 10px 20px;
     border: none;
     background: #F67E7D;
     border-radius: 20px;
-    font-family: 'PT Sans Narrow';
-    font-size: 12px;
-    font-weight: 700;
+    font-family: tahoma;
+    font-size: 1em;
     letter-spacing: 0.2em;
-    text-align: center;
     color: #FFFFFF;
-    margin-top: 80px;
-    margin-right: 20px;
+    margin:  20px 40px;
     cursor: pointer;
-
 
 }
 
 .contact{
-    width: 128px;
-    height: 30px;
+ 
     border: 1px solid #FFFFFF;
     background: #f67d7d00;
+    padding: 10px 20px;
     border-radius: 20px;
-    font-family: 'PT Sans Narrow';
-    font-size: 12px;
-    font-weight: 700;
+    font-family: tahoma;
+    font-size: 1em;
     letter-spacing: 0.2em;
     text-align: center;
     color: #FFFFFF;
-    margin-top: 80px;
-    margin-right: 20px;
     cursor: pointer;
+}
     
+.cv-download:hover{
+    background-color: #833B61;
+    transition: 5ms;
+    transform: scale(1.1);
+}
 
-
+.contact:hover{
+    background: #833B61;
+    border: #833B61;
 }
 
 .header-scroll-icon {
