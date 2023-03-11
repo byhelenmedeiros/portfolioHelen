@@ -104,32 +104,18 @@ li {
     align-items: center;
 }
 
-        
-.header-title img{
-    text-align: center;  
-}
-
-
 .header-hello h2{
     font-family: 'JetBrains Mono';
     font-style: normal;
     text-align: center;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 2em;
     color: #FFFFFF;
-    position: relative;
-    z-index: 1;
-
-
-
-    
-
 }
 .header-hello span{
     font-family: 'JetBrains Mono';
     font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
+    font-size: 1em;
     color: #F67E7D;
     
     
