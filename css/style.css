@@ -174,9 +174,9 @@
     color: var(--cor-detalhes);
     font-size: 0.8em;
     background-color: var(--cor-secundaria);
-    padding: 0.4em;
-    border-radius: 25%;
-    width: 1.2em;
+    padding: 0.5em;
+    border-radius: 55%;
+    width: 1.4em;
     height: 1.2em;
 }
 
