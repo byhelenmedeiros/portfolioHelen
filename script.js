@@ -1,23 +1,22 @@
-const button = document.querySelector('.cv-download');
+document.addEventListener('DOMContentLoaded', function () {
+  var hamburger = document.querySelector('.navbar__hamburguer');
+  var closeButton = document.querySelector('.navbar__close');
 
-button.addEventListener('click', function() {
-  const link = document.createElement('a');
-  link.href = '/assets/docs/cvhelen.pdf';
-  link.download = 'cvhelen.pdf';
-  link.click();
-});
+  if (hamburger) {
+      hamburger.addEventListener('click', function() {
+          var menu = document.querySelector('.navbar__container-menu');
+          if (menu) {
+              menu.classList.toggle('active');
+          }
+      });
+  }
 
-
-const icon = document.querySelector('.icon');
-const textP = document.querySelector('.text-p');
-const hiddenTextP = document.querySelector('.text-p.hidden');
-
-icon.addEventListener('mouseover', function() {
-  textP.style.display = 'none';
-  hiddenTextP.style.display = 'block';
-});
-
-icon.addEventListener('mouseout', function() {
-  textP.style.display = 'block';
-  hiddenTextP.style.display = 'none';
+  if (closeButton) {
+      closeButton.addEventListener('click', function() {
+          var menu = document.querySelector('.navbar__container-menu');
+          if (menu) {
+              menu.classList.remove('active');
+          }
+      });
+  }
 });
