@@ -17,7 +17,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
     
 }
 :root {
@@ -103,6 +103,7 @@
         transform: translateX(-100%);
         transition: transform 0.2s ease;
         border-radius: 0 0 25px 25px;
+        
     }
 
     .navbar__container-menu.active {
@@ -118,6 +119,20 @@
     .navbar__close span {
         font-size: 2em; 
     }
+    /*header*/
+
+    .header__container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header__container-hello{
+        margin-top: 5em;
+        width: 100%;
+    }
+
+ 
     
 }
 
@@ -126,6 +141,8 @@
         display: none;
     }
 }
+
+
 
     
 .navbar__close {
@@ -181,3 +198,65 @@
 }
 
 
+/*header*/
+
+.header__container-hello::after{
+    content: "Hello World";
+    max-width: 100px;
+    font-family: var(--fonte-principal);
+    color: #ffffff10;
+    font-size: 5em;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+}
+
+.header__container{
+        display: flex;
+        flex-direction: row;
+    justify-content: space-between;
+      ;
+}
+.header__container-hello{
+    margin-top: 5em;
+    width: 30%;
+    margin-left: 15%;
+    text-align: left;
+}
+.header__container-img {
+    min-width: 500px; /* Defina um tamanho mínimo adequado */
+    /* outras propriedades conforme necessário */
+}
+
+.header__container-img img {
+    width: 600px;
+;
+
+}
+
+
+
+#texto-dinamico{
+    font-family: var(--fonte-principal);
+    color: #fff;
+}
+
+.header__container-hello h1, h2{
+    font-family: var(--fonte-principal);
+    color: #fff;
+}
+.header__container-hello span{
+    color: var(--cor-principal);
+}
+
+#cursor {
+    opacity: 1;
+    animation: blink 1s steps(2, start) infinite;
+    color: #fff;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
