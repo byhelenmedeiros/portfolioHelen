@@ -66,3 +66,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
   digitar();
 });
+
+
+//popup 
+
+document.getElementById('container__sobre-btnLerMais').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'block';
+});
+
+document.getElementById('btnFecharPopup').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'none';
+});
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('popup')) {
+        document.getElementById('popup').style.display = 'none';
+    }
+}
+
+document.getElementById('container__sobre-btnProjetos').addEventListener('click', function() {
+    window.location.href = '#projetos';
+});

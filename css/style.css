@@ -19,6 +19,7 @@
     list-style: none;
     scroll-behavior: smooth;    
     
+    
 }
 :root {
     --cor-principal: #F67E7D;      
@@ -35,7 +36,8 @@
 }
 
 .container__header{
-    height: 80vh;
+    height: 90vh;
+
     background: linear-gradient(130deg, #13093e 10%, #321a61 30%, #281386 50%, #310553 70%, #483b81 90%);
     background-size: 300% 300%;
 
@@ -74,6 +76,8 @@
     background-color: var(--cor-secundaria);
     border-radius: 50px;
 }
+
+
 
 
 /* Estilo para dispositivos móveis */
@@ -130,16 +134,9 @@
     .header__container-hello{
         margin-top: 5em;
         width: 100%;
+        margin-left: 10px;
     }
-
- 
     
-}
-
-@media (max-width: 400px) {
-    .idioma__pt, .idioma__en {
-        display: none;
-    }
 }
 
 
@@ -156,6 +153,7 @@
     text-align: left;
     justify-content: space-between;
     padding: 3em;
+    align-items: center;
 }
 .navbar__container-logo{
     font-size: .8em;
@@ -204,46 +202,37 @@
     content: "Hello World";
     max-width: 100px;
     font-family: var(--fonte-principal);
-    color: #ffffff10;
+    color: #ffffff0c;
     font-size: 5em;
     position: fixed;
     top: 25%;
-    left: 15%;
+    left: 10%;
 }
 
 .header__container{
         display: flex;
         flex-direction: row;
-    justify-content: space-between;
-      ;
+        justify-content: center;
+        align-items:center;
 }
-.header__container-hello{
-    margin-top: 5em;
-    width: 30%;
-    margin-left: 15%;
-    text-align: left;
-}
-.header__container-img {
-    min-width: 500px; /* Defina um tamanho mínimo adequado */
-    /* outras propriedades conforme necessário */
-}
+
 
 .header__container-img img {
-    width: 600px;
-;
-
+    width: 550px;
 }
-
-
 
 #texto-dinamico{
     font-family: var(--fonte-principal);
     color: #fff;
 }
 
-.header__container-hello h1, h2{
+.header__container-hello > h1, .header__container-hello > h2{
     font-family: var(--fonte-principal);
     color: #fff;
+    font-size: 1.8em;
+}
+.header__container-hello > h1{
+    font-size: inherit;
 }
 .header__container-hello span{
     color: var(--cor-principal);
@@ -260,3 +249,86 @@
         opacity: 0;
     }
 }
+
+.container__buttons-header{
+    margin-top: 2em;
+}
+
+.cv-download, .contact, #container__sobre-btnProjetos, #container__sobre-btnLerMais{
+    background-color: var(--cor-principal);
+    border-radius: var(--espacamento);
+    padding: 0.4em 1.2em;
+    border: none;
+    color: #fff;
+    font-size: 0.5;
+}
+.contact{
+    background-color: transparent;
+    border: 1px solid ;
+    margin: 0 1em;
+}
+/*************SOBRE MIM************/
+
+.container__sobre-home{
+    background-image: url(/img/Group.png);
+    display: flex;
+    padding: 5% 10%;
+}
+.container__sobremim, .sobremim-hello {
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    margin-bottom: 1em;
+}
+
+.sobremim-hello{
+    font-family: var(--fonte-secundario);
+    font-size: 2em;
+}
+
+.sobremim-nome{
+    font-family: var(--fonte-principal);
+    color: var(--cor-secundaria);
+    margin-bottom: 1em;
+}
+.sobremim-nome span{
+    color: var(--cor-principal);
+    font-weight: bold;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.popup-content {
+    background: #fff;
+    margin: 15% auto;
+    padding: 3em;
+    width: 50%;
+    position: relative;
+    border-radius: var(--espacamento);
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container__texto{
+    max-width: 90%;
+}
+#container__sobre-btnLerMais{
+    margin: 1em 0;
+}
+

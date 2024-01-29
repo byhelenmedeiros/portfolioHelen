@@ -5,12 +5,15 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://kit.fontawesome.com/84cd59b4e5.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+    <script src="script.js" defer></script>
 
     <title>Helen Medeiros</title>
 </head>
@@ -25,7 +28,7 @@
             </div>
 
         <div class="navbar__container-logo">
-            <h2>.medeiros{</h2>
+            <h3 class="logo-navbar">.medeiros{</h3>
         </div>
         <div class="navbar__container-menu">
             <div class="navbar__close">
@@ -41,7 +44,7 @@
         <div>
 
         <!-- Idiomas -->
-        <div class="navbar__container-idioma">
+        <div class="navbar__container-idioma d-none d-lg-block">
             <div class="idioma__pt">
                 <span>PT</span>
             </div>
@@ -52,17 +55,51 @@
     </nav>
 
     <div class="header__container">
-        <div class="header__container-hello">
+        <div class="header__container-hello col-12 col-md-6">
             <h1>>Hello World!</h1>
             <h2>I'am <span>Helen,</span> <br><span id="texto-dinamico"></span><span id="cursor">|</span></h2>
+            
+        <div class="container__buttons-header">
+            <button class="cv-download">CV RESUME</button>
+            <button class="contact">ENTRE EM CONTACTO</button>
         </div>
-        <div class="header__container-img d-none">
-            <img src="/img/girlheader.png" alt="animacao com computador em maos" srcset="">
+        </div>
+        <div class="header__container-img d-none d-lg-block">
+            <img src="/img/girlheader.webp" alt="animacao com computador em maos" srcset="">
+        </div>
+    </div>
+    <div class="container__sobre-home">
+        <div class="container__sobre-text">
+            <img src="/img/_About me.png" alt="">
+            <h2 class="container__sobremim">Sobre mim</h2>
+            <span class="sobremim-hello">Hello, again</span>
+            <h3 class="sobremim-nome">I'm <span>Helen Medeiros,</span></h3>
+            <div class="container__texto">
+            <p>Iniciei a minha carreira na <strong>area tech no Brasil</strong>, como designer gáfico com um forte interesse em <strong>desenvolvimento web</strong>, focando especialmente no Wordpress. A minha paixão por tecnologia e programação cresceu ao longo dos anos, levando-me a uma mudança significativa na minha trajetória profissional.</p>
+
+                <p> Em 2019, <strong>mudei-me para Portugal</strong> e estabeleci-me em Viana do Castelo. Esta mudança não foi apenas geográfica, mas também um ponto de viragem na minha carreira. Em 2022, participei no Programa Jovem+Digital, onde aprofundei os meus conhecimentos em <strong>UX e UI Design</strong>. Embora inicialmente focado no design, rapidamente percebi que a minha verdadeira vocação era o desenvolvimento web.</p>
+
+                <button id="container__sobre-btnLerMais">LEIA MAIS</button>
+
+                    
+                    <div id="popup" class="popup">
+                        <div class="popup-content">
+                            <span id="btnFecharPopup" class="close-btn">&times;</span>
+                            <p> No mesmo ano, dei um passo importante ao iniciar um <strong>curso profissional de nível 4 </strong>em desenvolvimento. Este curso foi crucial para solidificar a minha base em programação e desenvolvimento web. Além disso, para aprofundar os meus conhecimentos, ingressei no Instituto <strong>Politécnico de Viana do Castelo</strong> (IPVC) no curso CTESP em Web e Desenvolvimento Multimédia.</p>
+                
+                            <p>Recentemente, enriqueci o meu perfil académico e profissional com um curso profissional em programação informática. Este curso permitiu-me desenvolver <strong>habilidades técnicas avançadas</strong> e uma compreensão mais aprofundada sobre o desenvolvimento de software. Hoje, como desenvolvedora web, estou capacitada para enfrentar desafios e oportunidades neste campo, combinando base técnica com a experiência adquirida.</p></p>
+                            <button id="container__sobre-btnProjetos">VEJA MEUS PROJECTOS</button>
+                        </div>
+                    </div>
+                
+            
+        </div>
+    </div>
+        <div class="container__sobre-img">
+            <img src="/img/Group 5 (1).png" class="image-sobre">
         </div>
     </div>
 
 </div>
-
-
 </body>
 </html>
