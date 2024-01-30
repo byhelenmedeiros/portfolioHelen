@@ -271,27 +271,28 @@
 
 .container__sobre-home{
     background-image: url(/img/Group.png);
+    height: 100vh;
     display: flex;
-    padding: 5% 10%;
+    padding: 10% 10%;
 }
-.container__sobremim, .sobremim-hello {
+.container__sobremim, .sobremim-hello, .container__skills{
     font-family: var(--fonte-principal);
     font-weight: bold;
     color: var(--cor-secundaria);
     margin-bottom: 1em;
 }
 
-.sobremim-hello{
+.sobremim-hello, .skills-well{
     font-family: var(--fonte-secundario);
     font-size: 2em;
 }
 
-.sobremim-nome{
+.sobremim-nome, .skills-frase{
     font-family: var(--fonte-principal);
     color: var(--cor-secundaria);
     margin-bottom: 1em;
 }
-.sobremim-nome span{
+.sobremim-nome span, .skills-frase span{
     color: var(--cor-principal);
     font-weight: bold;
 }
@@ -332,3 +333,13 @@
     margin: 1em 0;
 }
 
+/***********SKILLS********/
+
+.container__skills-home{
+    height: 100vh;
+    background-color: var(--cor-bgclaro);
+    padding: 5% 10%;
+}
+.container__skills-title{
+    color: var(--cor-secundaria);
+}
