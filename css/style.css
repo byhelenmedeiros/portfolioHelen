@@ -269,6 +269,20 @@
 }
 /*************SOBRE MIM************/
 
+.image-sobre{ 
+    border: solid 3px var(--cor-secundaria); /* Primeira borda com cor 'cor1' */
+    margin: 1em;
+    border-radius: 10%;
+    text-align: center;
+    position: relative;
+    transition: box-shadow 0.3s ease; /* Transição suave para o efeito hover */
+    box-shadow: 10px 10px 0 0 var(--cor-principal); /* Sombra deslocada para a direita e para baixo com cor 'cor2' */
+}
+.image-sobre:hover{ 
+    box-shadow: 1px 1px 0 0 var(--cor-principal); 
+    
+    }
+
 .container__sobre-home{
     background-image: url(/img/Group.png);
     height: 100vh;
@@ -335,11 +349,83 @@
 
 /***********SKILLS********/
 
-.container__skills-home{
+.container__skills-home {
     height: 100vh;
     background-color: var(--cor-bgclaro);
     padding: 5% 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    align-content: center;
 }
-.container__skills-title{
+
+.container__skills-title {
     color: var(--cor-secundaria);
+}
+
+#showtext {
+    background-color: var(--cor-principal);
+    width: max-content;
+    padding: 0.8em;
+    color: var(--cor-secundaria);
+    border-radius: 0.7em;
+}
+
+
+/* Estilização para cada grupo de tecnologias */
+.container__skills-tech {
+    display: flex;
+    flex-direction: column; 
+    align-items: stretch;
+   
+}
+
+.container__techlogos {
+    padding: 1.5em 2em;
+    border: solid 3px var(--cor-secundaria); /* Primeira borda com a cor secundária */
+    margin: 1em;
+    border-radius: 10%;
+    text-align: center;
+    position: relative;
+    box-shadow: 9px 9px 0 0 var(--cor-principal);
+    transition: box-shadow 0.3s ease; /* Transição suave para o efeito hover */
+}
+
+.container__techlogos:hover {
+    box-shadow: 1px 1px 0 0 var(--cor-principal); /* Sombra menor para o estado normal */
+}
+
+
+
+.container__techlogos i{
+    color: var(--cor-secundaria);
+    font-size: 3em; 
+    transition: transform 0.3s ease, color 0.3s ease; 
+
+}
+.container__techlogos p{
+    color: var(--cor-secundaria);
+    font-size: 0.8em; 
+    margin-top: 0.8em;
+}
+.container__techlogos i:hover{
+    color: var(--cor-principal);
+    transform: scale(1.1); 
+
+}
+
+.container__skills-text {
+    grid-column: 1 / 3; /* Ocupa as duas primeiras colunas */
+    grid-row: 1; /* Primeira linha */
+}
+
+.container__skills-logos {
+      display: flex;
+      align-items: center;
+
+
+
+}
+
+.container__skills-card {
+    grid-column: 1 / -1; /* Ocupa todas as colunas */
 }
