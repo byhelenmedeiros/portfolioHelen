@@ -87,3 +87,46 @@ window.onclick = function(event) {
 document.getElementById('container__sobre-btnProjetos').addEventListener('click', function() {
     window.location.href = '#projetos';
 });
+
+
+//skills//
+
+document.addEventListener("DOMContentLoaded", function() {
+    const showTextElement = document.getElementById("showtext");
+
+    document.getElementById("htmlCard").addEventListener("mouseover", function() {
+        showTextElement.innerHTML = "HTML: Mais de 5 anos de experiência, desenvolvendo websites e aplicativos web responsivos.";
+    });
+
+    document.getElementById("cssCard").addEventListener("mouseover", function() {
+        showTextElement.innerHTML = "CSS: 5 anos de experiência, especialização em Flexbox e Grid para layouts complexos e design adaptativo.";
+    });
+
+    document.getElementById("jsCard").addEventListener("mouseover", function() {
+        showTextElement.innerHTML = "JavaScript: 2 anos de experiência, criando interações dinâmicas, SPAs com React e backend com Node.js.";
+    });
+
+    document.getElementById("javaCard").addEventListener("mouseover", function() {
+        showTextElement.innerHTML = "Java: Conhecimentos em projectos académicos e projectos pessoais.";
+    });
+
+    document.getElementById("wordpressCard").addEventListener("mouseover", function() {
+        showTextElement.innerHTML = "WordPress: 6 anos de experiência, criando e gerenciando sites, com habilidades em personalização de temas e plugins.";
+    });
+
+    document.getElementById("phpCard").addEventListener("mouseover", function() {
+        showTextElement.innerHTML = "PHP: 1 anos de experiência, desenvolvendo sites dinâmicos e aplicações web complexas.";
+    });
+
+    document.getElementById("mysqlCard").addEventListener("mouseover", function() {
+        showTextElement.innerHTML = "MySQL: 1 anos de experiência, projetando e otimizando bancos de dados relacionais para aplicações web de alta performance.";
+    });
+
+    document.getElementById("figmaCard").addEventListener("mouseover", function() {
+        showTextElement.innerHTML = "Figma: 2 anos de experiência, utilizando para design UI/UX, prototipação de aplicativos e colaboração em equipe.";
+    });
+
+    document.getElementById("elementorCard").addEventListener("mouseover", function() {
+        showTextElement.innerHTML = "Elementor: 6 anos de experiência, criando sites visualmente atraentes e altamente personalizados em WordPress.";
+    });
+});
