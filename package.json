@@ -1,5 +1,18 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.2"
-  }
+    "bootstrap": "^5.3.2",
+    "sass": "^1.70.0"
+  },
+  "name": "portfoliohelen-1",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass --watch scss/styles.scss css/styles.css"
+}
+
+,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

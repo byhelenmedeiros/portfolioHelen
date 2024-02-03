@@ -130,3 +130,73 @@ document.addEventListener("DOMContentLoaded", function() {
         showTextElement.innerHTML = "Elementor: 6 anos de experiência, criando sites visualmente atraentes e altamente personalizados em WordPress.";
     });
 });
+
+
+// LIGHTBOX//
+
+document.addEventListener('DOMContentLoaded', function() {
+    const galleryItems = document.querySelectorAll('.cardproject1 img'); // Seleciona todas as imagens dentro dos cards de projeto
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.querySelector('.lightbox-image');
+    const lightboxName = document.querySelector('.lightbox-name');
+    const lightboxDescription = document.querySelector('.lightbox-description');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    const lightboxTech = document.querySelector('.lightbox-tech');
+    const projectLinkElement = document.querySelector('.project-link');
+
+    function openLightbox() {
+        lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+        lightbox.style.display = 'none';
+    }
+
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const imageUrl = item.getAttribute('data-src');
+            const name = item.getAttribute('data-name');
+            const description = item.getAttribute('data-description');
+            const tech = item.getAttribute('data-tech');
+            const projectLink = item.getAttribute('data-link');
+
+            lightboxImage.src = imageUrl;
+            lightboxName.textContent = name;
+            lightboxDescription.textContent = description;
+
+            // Atualiza o link do projeto apenas se fornecido
+            if (projectLink) {
+                projectLinkElement.href = projectLink;
+                projectLinkElement.style.display = '';
+            } else {
+                projectLinkElement.style.display = 'none'; // Esconde o link se não houver um
+            }
+
+            // Limpa e adiciona ícones de tecnologia
+            lightboxTech.innerHTML = '';
+            if (tech) {
+                tech.split(', ').forEach(tech => {
+                    const icon = document.createElement('i');
+                    icon.className = `bi ${tech}`;
+                    lightboxTech.appendChild(icon);
+                });
+            }
+
+            openLightbox();
+        });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeLightbox();
+        }
+    });
+});

@@ -1,0 +1,35 @@
+// Definição das suas variáveis personalizadas
+$cor-principal: #F67E7D;      
+$cor-secundaria: #833B61;      
+$cor-destaque: #361f9e;
+$cor-textofundo: #ABABAB;           
+$cor-detalhes: #B3A7DF;          
+$cor-bgclaro: #F8F8F8;
+$fonte-principal: 'JetBrains', sans-serif;
+$fonte-secundario: 'PTSansNarrow', sans-serif; 
+$fonte-fontbold: 'ptsansbold', sans-serif; 
+
+// Sobrescrevendo as variáveis do Bootstrap
+$theme-colors: (
+  "primary": $cor-principal,
+  "secondary": $cor-secundaria,
+  "success": $cor-destaque,
+  "info": $cor-detalhes,
+  "warning": #ffc107, 
+  "danger": #dc3545,
+  "light": $cor-bgclaro,
+  "dark": #343a40
+);
+
+$body-bg: $cor-bgclaro; // Cor de fundo do corpo
+$body-color: $cor-textofundo; // Cor padrão do texto
+$font-family-base: $fonte-principal; // Fonte padrão
+
+
+// Importar os arquivos SCSS do Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-brand {
+    font-family: $font-family-base; 
+    color: $primary; 
+}

@@ -1,175 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-
+    <title>Helen Medeiros</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://kit.fontawesome.com/84cd59b4e5.css">
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="script.js" defer></script>
-
-    <title>Helen Medeiros</title>
 </head>
 <body>
-    <div class="container__header">
-        <nav class="navbar__body">
-            <!-- Botão Hambúrguer -->
-            <div class="navbar__hamburguer">
-                <span></span>
-                <span></span>
-                <span></span>
+    <div class="container-fluid p-0" id="header-home">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">.medeiros{</a>
+    
+                <!-- Hamburguer Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse navbar-custom" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre-mim">.Sobre mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">.Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">.Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formacao">.Formação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">.Contacte-me</a>
+                        </li>
+                    </ul>
+                    <!-- Language Selector -->
+                    <div class="navbar__container-idioma d-none d-lg-flex">
+                        <div class="idioma__pt mx-2"><span>PT</span></div>
+                        <div class="idioma__en mx-2"><span>EN</span></div>
+                    </div>
+                </div>
             </div>
-
-        <div class="navbar__container-logo">
-            <h3 class="logo-navbar">.medeiros{</h3>
-        </div>
-        <div class="navbar__container-menu">
-            <div class="navbar__close">
-                <span>&times;</span> 
-            </div>
-                <li><a href="#sobre-mim">.Sobre mim</a></li>
-                <li><a href="#habilidades">.Habilidades</a></li>
-                <li><a href="#projetos">.Projetos</a></li>
-                <li><a href="#formacao">.Formação</a></li>
-                <li><a href="#contacto">.Contacte-me</a></li>
-
-        </div>
-        <div>
-
-        <!-- Idiomas -->
-        <div class="navbar__container-idioma d-none d-lg-block">
-            <div class="idioma__pt">
-                <span>PT</span>
-            </div>
-            <div class="idioma__en">
-                <span>EN</span>
-            </div>
-        </div>
-    </nav>
-
-    <div class="header__container">
-        <div class="header__container-hello col-12 col-md-6">
-            <h1>>Hello World!</h1>
-            <h2>I'am <span>Helen,</span> <br><span id="texto-dinamico"></span><span id="cursor">|</span></h2>
-            
-        <div class="container__buttons-header">
-            <button class="cv-download">CV RESUME</button>
-            <button class="contact">ENTRE EM CONTACTO</button>
-        </div>
-        </div>
-        <div class="header__container-img d-none d-lg-block">
-            <img src="/img/girlheader.webp" alt="animacao com computador em maos" srcset="">
-        </div>
-    </div>
-    <div class="container__sobre-home">
-        <div class="container__sobre-text">
-            <img src="/img/_About me.png" alt="">
-            <h2 class="container__sobremim">Sobre mim</h2>
-            <span class="sobremim-hello">Hello, again</span>
-            <h3 class="sobremim-nome">I'm <span>Helen Medeiros,</span></h3>
-            <div class="container__texto">
-            <p>Iniciei a minha carreira na <strong>area tech no Brasil</strong>, como designer gáfico com um forte interesse em <strong>desenvolvimento web</strong>, focando especialmente no Wordpress. A minha paixão por tecnologia e programação cresceu ao longo dos anos, levando-me a uma mudança significativa na minha trajetória profissional.</p>
-
-                <p> Em 2019, <strong>mudei-me para Portugal</strong> e estabeleci-me em Viana do Castelo. Esta mudança não foi apenas geográfica, mas também um ponto de viragem na minha carreira. Em 2022, participei no Programa Jovem+Digital, onde aprofundei os meus conhecimentos em <strong>UX e UI Design</strong>. Embora inicialmente focado no design, rapidamente percebi que a minha verdadeira vocação era o desenvolvimento web.</p>
-
-                <button id="container__sobre-btnLerMais">LEIA MAIS</button>
-
-                    
-                    <div id="popup" class="popup">
-                        <div class="popup-content">
-                            <span id="btnFecharPopup" class="close-btn">&times;</span>
-                            <p> No mesmo ano, dei um passo importante ao iniciar um <strong>curso profissional de nível 4 </strong>em desenvolvimento. Este curso foi crucial para solidificar a minha base em programação e desenvolvimento web. Além disso, para aprofundar os meus conhecimentos, ingressei no Instituto <strong>Politécnico de Viana do Castelo</strong> (IPVC) no curso CTESP em Web e Desenvolvimento Multimédia.</p>
-                
-                            <p>Recentemente, enriqueci o meu perfil académico e profissional com um curso profissional em programação informática. Este curso permitiu-me desenvolver <strong>habilidades técnicas avançadas</strong> e uma compreensão mais aprofundada sobre o desenvolvimento de software. Hoje, como desenvolvedora web, estou capacitada para enfrentar desafios e oportunidades neste campo, combinando base técnica com a experiência adquirida.</p></p>
-                            <button id="container__sobre-btnProjetos">VEJA MEUS PROJECTOS</button>
+        </nav>
+        <div class="header__container">
+            <div class="container-fluid p-0"> <!-- Garante que o container ocupe 100% da largura da tela -->
+                <div class="row align-items-center justify-content-center"> <!-- Linha para os itens -->
+                    <!-- Conteúdo Textual -->
+                    <div class="col-12 col-lg-6 text-md-left">
+                        <h1>Hello World!</h1>
+                        <h2>I'm <span>Helen,</span><br><span id="texto-dinamico"></span><span id="cursor">|</span></h2>
+                        <div class="container__buttons-header mt-4">
+                            <button class="btn cv-download bg-principal text-white">CV RESUME</button>
+                            <button class="btn contact border-principal text-principal">ENTRE EM CONTACTO</button>
                         </div>
                     </div>
-                
-            
+                    <!-- Imagem -->
+                    <div class="col-lg-6 d-none d-lg-block"> <!-- Mostrar apenas em lg e dispositivos maiores -->
+                        <img src="/img/girlheader.webp" alt="animacao com computador em maos" class="img-fluid" id="imagemhome">
+                    </div>
+                </div></div></div></div>
+            </div>
         </div>
     </div>
-        <div class="container__sobre-img">
-            <img src="/img/hm 1.png" class="image-sobre">
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-8">
+                <!-- Conteúdo Textual - Lado Esquerdo -->
+                <div class="col-md-8 col-lg-8">
+                    <div class="text-left text-md-left">
+                        <img src="/img/_About me.png" alt="" class="img-fluid mb-3">
+                        <h2 class="container__sobremim">Sobre mim</h2>
+                        <span class="sobremim-hello">Hello, again</span>
+                        <h3 class="sobremim-nome">I'm <span>Helen Medeiros,</span></h3>
+                    </div>
+                    <div class="container__texto">
+                        <p>Iniciei a minha carreira na <strong>área tech no Brasil</strong>, como designer gráfico com um forte interesse em <strong>desenvolvimento web</strong>, focando especialmente no Wordpress. A minha paixão por tecnologia e programação cresceu ao longo dos anos, levando-me a uma mudança significativa na minha trajetória profissional.</p>
+                        <p>Em 2019, <strong>mudei-me para Portugal</strong> e estabeleci-me em Viana do Castelo. Esta mudança não foi apenas geográfica, mas também um ponto de viragem na minha carreira. Em 2022, participei no Programa Jovem+Digital, onde aprofundei os meus conhecimentos em <strong>UX e UI Design</strong>. Embora inicialmente focado no design, rapidamente percebi que a minha verdadeira vocação era o desenvolvimento web.</p>
+                        <button id="container__sobre-btnLerMais" class="btn">LEIA MAIS</button>
+                    </div>
+                </div>
+    
+                <!-- Imagem - Lado Direito -->
+                <div class="col-md-4 col-lg-4">
+                    <img src="/img/hm 1.png" alt="Helen Medeiros" class="img-fluid image-sobre">
+                </div>
+            </div>
         </div>
     </div>
-
-    <!--SKILLS-->
-    <div class="container__skills-home">
-        <div class="container__skills-text">
-            <img src="/img/_My skills.png" alt="">
-            <h2 class="container__skills">Minhas skills</h2>
-
-            <h3 class="skills-frase">Essas são as minhas <span>skills,</span></h3>
-            <p class="container__skills-title">Aqui estão algumas das minhas habilidades nas quais tenho trabalhado recentemente:</p>
-            <div class="container__showtext">
+    
+<!--SKILLS-->
+<div class="container__skills-home mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 mb-4 text-center">
+            <img src="/img/_My skills.png" alt="" class="img-fluid">
+            <h2 class="mt-3">Minhas skills</h2>
+            <h3>Essas são as minhas <span>skills,</span></h3>
+            <p>Aqui estão algumas das minhas habilidades nas quais tenho trabalhado recentemente:</p>
+            <div class="container__showtext mt-2">
                 <p id="showtext">Veja mais detalhes de minhas skills!</p>
-            </div></div><div class="container__skills-logos">
-            <div class="container__skills-tech">
-                
-                <div class="container__techlogos"  id="htmlCard">
-                    <i class="fab fa-html5"> </i><p>HTML</p>
-                </div>
-                <div class="container__techlogos"  id="cssCard">
-                    <i class="fab fa-css3-alt"></i> </i><p>CSS</p>
-                </div>
-                <div class="container__techlogos"  id="jsCard">
-                    <i class="fab fa-js-square"></i><p>JAVASCRIPT</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <!-- HTML Card -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card text-center container__techlogos" id="htmlCard">
+                <div class="card-body">
+                    <i class="fab fa-html5 fa-2x"></i>
+                    <p class="mt-2">HTML</p>
                 </div>
             </div>
-            <div class="container__skills-tech">
-                <div class="container__techlogos"  id="javaCard">
-                    <i class="fab fa-java" aria-hidden="true"></i><p>JAVA</p>
-                </div>
-                <div class="container__techlogos"  id="wordpressCard">
-                    <i class="fab fa-wordpress" aria-hidden="true"></i><p>WORDPRESS</p>
-                </div>
-                <div class="container__techlogos"  id="phpCard">
-                    <i class="fab fa-php" aria-hidden="true"></i><p>PHP</p>
+        </div>
+
+
+        <!-- CSS Card -->
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card text-center container__techlogos" id="cssCard">
+                <div class="card-body">
+                    <i class="fab fa-css3-alt fa-2x"></i>
+                    <p class="mt-2">CSS</p>
                 </div>
             </div>
-            <div class="container__skills-tech">
-                <div class="container__techlogos" id="mysqlCard">
-                    <i class="fas fa-database" aria-hidden="true"></i><p>MYSQL</p>
+        </div>
+
+        <!-- JavaScript Card -->
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card text-center container__techlogos" id="jsCard">
+                <div class="card-body">
+                    <i class="fab fa-js-square fa-2x"></i>
+                    <p class="mt-2">JavaScript</p>
                 </div>
-                <div class="container__techlogos"  id="figmaCard">
-                    <i class="fab fa-figma" aria-hidden="true"></i><p>FIGMA</p>
+            </div>
+        </div>
+
+        <!-- Java Card -->
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card text-center container__techlogos" id="javaCard">
+                <div class="card-body">
+                    <i class="fab fa-java fa-2x"></i>
+                    <p class="mt-2">Java</p>
                 </div>
-                <div class="container__techlogos"  id="elementorCard">
-                    <i class="fas fa-puzzle-piece" aria-hidden="true"></i><p>ELEMENTOR</p>
-                </div></div></div> <div class="container__skills-card"><i class="fa fa-mouse-pointer" aria-hidden="true"></i>
-                <small>Passe o cursor do mouse sobre o card para ler.</small>
+            </div>
+        </div>
+
+        <!-- WordPress Card -->
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card text-center container__techlogos" id="wordpressCard">
+                <div class="card-body">
+                    <i class="fab fa-wordpress fa-2x"></i>
+                    <p class="mt-2">WordPress</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHP Card -->
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card text-center container__techlogos" id="phpCard">
+                <div class="card-body">
+                    <i class="fab fa-php fa-2x"></i>
+                    <p class="mt-2">PHP</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MySQL Card -->
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card text-center container__techlogos" id="mysqlCard">
+                <div class="card-body">
+                    <i class="fas fa-database fa-2x"></i>
+                    <p class="mt-2">MySQL</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Figma Card -->
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card text-center container__techlogos" id="figmaCard">
+                <div class="card-body">
+                    <i class="fab fa-figma fa-2x"></i>
+                    <p class="mt-2">Figma</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elementor Card -->
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card text-center container__techlogos" id="elementorCard">
+                <div class="card-body">
+                    <i class="fas fa-puzzle-piece fa-2x"></i>
+                    <p class="mt-2">Elementor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container__skills-card"><i class="fa fa-mouse-pointer" aria-hidden="true"></i>
+                   <small>Passe o cursor do mouse sobre o card para ler.</small></div>
+</div>
                    
-                <!--PROJECTOS-->
-                
-            </div></div>
-            <div class="container__projetos-home">
+             
+            
+             <!--PROJECTOS-->
+             <div class="container__projetos-home">
                 <div class="container__projetos-text">
                     <img src="/img/_Projects.png" alt="">
-                    <h2 class="container__projetos">Projectos</h2>
-                    <h3 class="projeto-frase">Aqui estão os meus <span>projectos,</span></h3>
+                    <h2 class="container__projetos">Projetos</h2>
+                    <h3 class="projeto-frase">Aqui estão os meus <span>projetos,</span></h3>
                     <div class="container__projectos-cards">
-                        <div class="cardproject1">
-                            <img src="/img/website.png" alt="">
+                        <div class="cardproject1 gallery-item" data-category="elementor">
+                            <img src="/img/website.png" alt="Website" 
+                                data-src="/img/website.png" 
+                                data-name="MyFeet - Elementor" 
+                                data-description="Website para clínica de Podologia MyFeet feito com Wordpress e Elementor." 
+                                data-tech="bi-html5, bi-css3" 
+                                data-link="https://clinicamyfeet.com">
                         </div>
-                        <div class="cardproject1">
-                            <img src="/img/arlanlino.png" alt="">
+                        <div class="cardproject1 gallery-item" data-category="elementor">
+                            <img src="/img/website.png" alt="Website" 
+                                data-src="/img/website.png" 
+                                data-name="MyFeet - Elementor" 
+                                data-description="Website para clínica de Podologia MyFeet feito com Wordpress e Elementor." 
+                                data-tech="bi-html5, bi-css3" 
+                                data-link="https://clinicamyfeet.com">
                         </div>
-                        <div class="cardproject1">
-                            <img src="/img/floristasalome.png" alt="">
+                        <div class="cardproject1 gallery-item" data-category="elementor">
+                            <img src="/img/website.png" alt="Website" 
+                                data-src="/img/website.png" 
+                                data-name="MyFeet - Elementor" 
+                                data-description="Website para clínica de Podologia MyFeet feito com Wordpress e Elementor." 
+                                data-tech="bi-html5, bi-css3" 
+                                data-link="https://clinicamyfeet.com">
                         </div>
-                        <div class="cardproject1">
-                            <img src="/img/Desktop - 1.png" alt="">
+                        <div class="cardproject1 gallery-item" data-category="elementor">
+                            <img src="/img/website.png" alt="Website" 
+                                data-src="/img/website.png" 
+                                data-name="MyFeet - Elementor" 
+                                data-description="Website para clínica de Podologia MyFeet feito com Wordpress e Elementor." 
+                                data-tech="bi-html5, bi-css3" 
+                                data-link="https://clinicamyfeet.com">
+                        </div>
+                        <div class="cardproject1 gallery-item" data-category="elementor">
+                            <img src="/img/website.png" alt="Website" 
+                                data-src="/img/website.png" 
+                                data-name="MyFeet - Elementor" 
+                                data-description="Website para clínica de Podologia MyFeet feito com Wordpress e Elementor." 
+                                data-tech="bi-html5, bi-css3" 
+                                data-link="https://clinicamyfeet.com">
+                        </div>
+                        <div class="cardproject1 gallery-item" data-category="elementor">
+                            <img src="/img/website.png" alt="Website" 
+                                data-src="/img/website.png" 
+                                data-name="MyFeet - Elementor" 
+                                data-description="Website para clínica de Podologia MyFeet feito com Wordpress e Elementor." 
+                                data-tech="bi-html5, bi-css3" 
+                                data-link="https://clinicamyfeet.com">
+                        </div>
+                        <div class="cardproject1 gallery-item" data-category="elementor">
+                            <img src="/img/website.png" alt="Website" 
+                                data-src="/img/website.png" 
+                                data-name="MyFeet - Elementor" 
+                                data-description="Website para clínica de Podologia MyFeet feito com Wordpress e Elementor." 
+                                data-tech="bi-html5, bi-css3" 
+                                data-link="https://clinicamyfeet.com">
+                        </div>
+                        <div class="cardproject1 gallery-item" data-category="elementor">
+                            <img src="/img/website.png" alt="Website" 
+                                data-src="/img/website.png" 
+                                data-name="MyFeet - Elementor" 
+                                data-description="Website para clínica de Podologia MyFeet feito com Wordpress e Elementor." 
+                                data-tech="bi-html5, bi-css3" 
+                                data-link="https://clinicamyfeet.com">
+                        </div></div>
+                        <div class="container__project-button">
+                            <button type="button" class="btn_verMais">Ver mais</button>
                         </div>
                     </div>
+                </div>
+            </div>
+    <!-- Lightbox for Projects -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="imagem em destaque" class="lightbox-image">
+            <div class="lightbox-details">
+                <h3 class="lightbox-name"></h3>
+                <p class="lightbox-description"></p>
+                <div class="lightbox-tech"></div>
+                <a href="#" class="project-link" target="_blank">Visualizar Projeto</a>
+            </div>
+        </div>
+        <a href="#" class="lightbox-close"><i class="bi bi-x-circle"></i></a>
+    </div>
+        <!--FORMACAO-->
+
+      
 
                 </div>
                 
@@ -187,4 +321,6 @@
 
 
 </body>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
