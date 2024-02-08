@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Helen Medeiros</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" as="style">
     <link rel="stylesheet" href="https://kit.fontawesome.com/84cd59b4e5.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#">.medeiros{</a>
+                <a class="navbar-brand" href="contacto">.medeiros{</a>
     
                 <!-- Hamburguer Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
                 </button>
     
                 <!-- Navbar Links -->
-                <div class="collapse navbar-collapse navbar-custom" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="#sobre-mim">.Sobre mim</a>
@@ -45,19 +45,21 @@
                             <a class="nav-link" href="#contacto">.Contacte-me</a>
                         </li>
                     </ul>
+                    
                     <!-- Language Selector -->
                     <div class="navbar__container-idioma d-none d-lg-flex">
                         <div class="idioma__pt mx-2"><span>PT</span></div>
                         <div class="idioma__en mx-2"><span>EN</span></div>
-                    </div>
+                   
                 </div>
             </div>
         </nav>
         <div class="header__container">
-            <div class="container-fluid p-0"> <!-- Garante que o container ocupe 100% da largura da tela -->
+            <div class="container-fluid p-0 container__header-home"> 
                 <div class="row align-items-center justify-content-center"> <!-- Linha para os itens -->
                     <!-- Conteúdo Textual -->
-                    <div class="col-12 col-lg-6 text-md-left">
+                    <div class="col-12 col-lg-6 text-md-left header__container-hello">
+                        
                         <h1>Hello World!</h1>
                         <h2>I'm <span>Helen,</span><br><span id="texto-dinamico"></span><span id="cursor">|</span></h2>
                         <div class="container__buttons-header mt-4">
@@ -65,47 +67,44 @@
                             <button class="btn contact border-principal text-principal">ENTRE EM CONTACTO</button>
                         </div>
                     </div>
+
+                    
                     <!-- Imagem -->
-                    <div class="col-lg-6 d-none d-lg-block"> <!-- Mostrar apenas em lg e dispositivos maiores -->
+                    <div class="col-lg-6 d-none d-lg-block text-lg-end">
                         <img src="/img/girlheader.webp" alt="animacao com computador em maos" class="img-fluid" id="imagemhome">
                     </div>
                 </div></div></div></div>
             </div>
         </div>
-    </div>
-    <div class="container mt-5">
+    </div><div class="container container__sobre-home">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-8">
-                <!-- Conteúdo Textual - Lado Esquerdo -->
-                <div class="col-md-8 col-lg-8">
-                    <div class="text-left text-md-left">
-                        <img src="/img/_About me.png" alt="" class="img-fluid mb-3">
-                        <h2 class="container__sobremim">Sobre mim</h2>
-                        <span class="sobremim-hello">Hello, again</span>
-                        <h3 class="sobremim-nome">I'm <span>Helen Medeiros,</span></h3>
-                    </div>
-                    <div class="container__texto">
-                        <p>Iniciei a minha carreira na <strong>área tech no Brasil</strong>, como designer gráfico com um forte interesse em <strong>desenvolvimento web</strong>, focando especialmente no Wordpress. A minha paixão por tecnologia e programação cresceu ao longo dos anos, levando-me a uma mudança significativa na minha trajetória profissional.</p>
-                        <p>Em 2019, <strong>mudei-me para Portugal</strong> e estabeleci-me em Viana do Castelo. Esta mudança não foi apenas geográfica, mas também um ponto de viragem na minha carreira. Em 2022, participei no Programa Jovem+Digital, onde aprofundei os meus conhecimentos em <strong>UX e UI Design</strong>. Embora inicialmente focado no design, rapidamente percebi que a minha verdadeira vocação era o desenvolvimento web.</p>
-                        <button id="container__sobre-btnLerMais" class="btn">LEIA MAIS</button>
-                    </div>
+            <!-- Conteúdo Textual - Coluna para dispositivos médios para cima -->
+            <div class="col-12 col-md-8">
+                <img src="/img/_About_me.png" alt="" class="img-fluid mb-3">
+                <h2 class="container__sobremim">Sobre mim</h2>
+                <span class="sobremim-hello">Hello, again</span>
+                <h3 class="sobremim-nome">I'm <span>Helen Medeiros,</span></h3>
+                <div class="container__texto">
+                    <p>Iniciei a minha carreira na <strong>área tech no Brasil</strong>, como designer gráfico com um forte interesse em <strong>desenvolvimento web</strong>, focando especialmente no Wordpress. A minha paixão por tecnologia e programação cresceu ao longo dos anos, levando-me a uma mudança significativa na minha trajetória profissional.</p>
+                    <p>Em 2019, <strong>mudei-me para Portugal</strong> e estabeleci-me em Viana do Castelo. Esta mudança não foi apenas geográfica, mas também um ponto de viragem na minha carreira. Em 2022, participei no Programa Jovem+Digital, onde aprofundei os meus conhecimentos em <strong>UX e UI Design</strong>. Embora inicialmente focado no design, rapidamente percebi que a minha verdadeira vocação era o desenvolvimento web.</p>
+                    <button id="container__sobre-btnLerMais" class="btn">LEIA MAIS</button>
                 </div>
-    
-                <!-- Imagem - Lado Direito -->
-                <div class="col-md-4 col-lg-4">
-                    <img src="/img/hm 1.png" alt="Helen Medeiros" class="img-fluid image-sobre">
-                </div>
+            </div>
+            <!-- Imagem - Coluna para dispositivos médios para cima -->
+            <div class="col-12 col-md-4 mt-4 text-center">
+                <img src="/img/hm 1.png" alt="Helen Medeiros" class="img-fluid image-sobre d-block mx-auto" >
             </div>
         </div>
     </div>
     
+    
 <!--SKILLS-->
 <div class="container__skills-home mt-5">
     <div class="row justify-content-center">
-        <div class="col-12 mb-4 text-center">
+        <div class="col-12 mb-4">
             <img src="/img/_My skills.png" alt="" class="img-fluid">
-            <h2 class="mt-3">Minhas skills</h2>
-            <h3>Essas são as minhas <span>skills,</span></h3>
+            <h2 class="container__skills">Minhas skills</h2>
+            <h3 class="skills-frase">Essas são as minhas <span>skills,</span></h3>
             <p>Aqui estão algumas das minhas habilidades nas quais tenho trabalhado recentemente:</p>
             <div class="container__showtext mt-2">
                 <p id="showtext">Veja mais detalhes de minhas skills!</p>
@@ -115,7 +114,7 @@
 
     <div class="row justify-content-center">
         <!-- HTML Card -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-4">
             <div class="card text-center container__techlogos" id="htmlCard">
                 <div class="card-body">
                     <i class="fab fa-html5 fa-2x"></i>
@@ -126,7 +125,7 @@
 
 
         <!-- CSS Card -->
-        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-4">
             <div class="card text-center container__techlogos" id="cssCard">
                 <div class="card-body">
                     <i class="fab fa-css3-alt fa-2x"></i>
@@ -136,7 +135,7 @@
         </div>
 
         <!-- JavaScript Card -->
-        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-4">
             <div class="card text-center container__techlogos" id="jsCard">
                 <div class="card-body">
                     <i class="fab fa-js-square fa-2x"></i>
@@ -146,7 +145,7 @@
         </div>
 
         <!-- Java Card -->
-        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-4">
             <div class="card text-center container__techlogos" id="javaCard">
                 <div class="card-body">
                     <i class="fab fa-java fa-2x"></i>
@@ -156,7 +155,7 @@
         </div>
 
         <!-- WordPress Card -->
-        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-4">
             <div class="card text-center container__techlogos" id="wordpressCard">
                 <div class="card-body">
                     <i class="fab fa-wordpress fa-2x"></i>
@@ -166,7 +165,7 @@
         </div>
 
         <!-- PHP Card -->
-        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-4">
             <div class="card text-center container__techlogos" id="phpCard">
                 <div class="card-body">
                     <i class="fab fa-php fa-2x"></i>
@@ -176,7 +175,7 @@
         </div>
 
         <!-- MySQL Card -->
-        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-4">
             <div class="card text-center container__techlogos" id="mysqlCard">
                 <div class="card-body">
                     <i class="fas fa-database fa-2x"></i>
@@ -186,7 +185,7 @@
         </div>
 
         <!-- Figma Card -->
-        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-4">
             <div class="card text-center container__techlogos" id="figmaCard">
                 <div class="card-body">
                     <i class="fab fa-figma fa-2x"></i>
@@ -196,7 +195,7 @@
         </div>
 
         <!-- Elementor Card -->
-        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-4">
             <div class="card text-center container__techlogos" id="elementorCard">
                 <div class="card-body">
                     <i class="fas fa-puzzle-piece fa-2x"></i>
@@ -213,8 +212,8 @@
             
              <!--PROJECTOS-->
              <div class="container__projetos-home">
-                <div class="container__projetos-text">
-                    <img src="/img/_Projects.png" alt="">
+                <div class="col-12 mb-4">
+                    <img src="/img/_Projects.png" alt="" >
                     <h2 class="container__projetos">Projetos</h2>
                     <h3 class="projeto-frase">Aqui estão os meus <span>projetos,</span></h3>
                     <div class="container__projectos-cards">
@@ -301,15 +300,99 @@
         </div>
         <a href="#" class="lightbox-close"><i class="bi bi-x-circle"></i></a>
     </div>
-        <!--FORMACAO-->
-
-      
-
+    <div class="container container__education-border ">
+        <div class="row justify-content-center">
+            <!-- Primeira Coluna -->
+            <div class="col-12 col-md-6">
+                <div class="container__education-container">
+                    <div class="container__education-text">
+                        <img src="/img/_Education.png" alt="" class="img-fluid">
+                        <h2 class="container__education">Formação</h2>
+                        <h3 class="education-frase">Essas são as minhas <span>formações e certificações,</span></h3>
+                        <div class="container__formacao-certif">
+                            <h2>Cesae digital</h2>
+                            <h3>UI UX Design - Porto</h3>
+                            <p>Competências associadas a pensar e projetar interfaces digitais, com foco na usabilidade, experiência de navegação e interação.</p>
+                        </div>
+                        <div class="container__formacao-certif">
+                            <h2>Udemy</h2>
+                            <h3>Desenvolvimento Web Completo - 20 cursos + 20 projetos</h3>
+                            <p>HTML5, CSS3, BootStrap, Javascript, PHP, MySQL, JQuery, MVC, API, IONIC e Wordpress.</p>
+                        </div>
+                        <button class="btn-certficado">Ver todas as certificações</button>
+                    </div>
                 </div>
+            </div>
+    
+            <!-- Segunda Coluna -->
+            <div class="col-12 col-md-6">
+                <div class="container_educacao-cursos">
+                    <div class="container__curso1">
+                        <h2>Instituto Politécnico de Viana do Castelo</h2>
+                        <p>CTESP - Nível 5</p>
+                        <small>Desenvolvimento web e multimédia</small>
+                        <small>09/2022 - 06/2024</small>
+                    </div>
+                    <div class="container__curso1">
+                        <h2>Centro de Formação Comenius</h2>
+                        <p>EFA - Nível 4</p>
+                        <small>Programador informático</small>
+                        <small>08/2022 - 08/2023</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Seção de Contato -->
+<section id="contacto" class="text-center py-5">
+    <div class="container">
+        <h2>Contacte-me</h2>
+        <p>Entre em contato comigo preenchendo o formulário abaixo:</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+    <div class="container">
+        <p>&copy; <span id="current-year"></span> Feito com ❤️</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://github.com/seu-usuario-do-github" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.behance.net/seu-usuario-do-behance" target="_blank"><i class="fab fa-behance"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/seu-usuario-do-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    // Obtém o ano atual e insere no footer
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+</script>
+
+    
                 
                 </div>
             
-           
+         
         </div></div>
      </div>
             

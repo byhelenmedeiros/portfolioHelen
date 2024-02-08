@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function() {
   var frases = [
       'Eu sou Web Developer', 
-      'Eu sou FrontEnd Developer', 
-      'e também sou Web Designer', 
+      'sou FrontEnd Developer', 
+      'e também Web Designer', 
       'e apaixonada por tecnologia!'
   ];
 
@@ -38,6 +38,19 @@ document.addEventListener('DOMContentLoaded', function() {
   var indiceLetra = 0;
   var fraseAtual = '';
   var estaDigitando = true;
+
+  function ajustarFrasesParaMobile(frases) {
+    const larguraTela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    
+    if (larguraTela < 768) { // Supondo 768px como ponto de quebra para mobile
+        return frases.map(frase => frase.length > 20 ? `${frase.substring(0, 20)}...` : frase);
+    }
+    
+    return frases;
+}
+
+const frasesAjustadas = ajustarFrasesParaMobile(frases);
+
 
   function digitar() {
       if (estaDigitando) {
